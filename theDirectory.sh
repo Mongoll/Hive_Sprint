@@ -1,3 +1,3 @@
 cat README
 
-pwd #pwd
+pwd
