@@ -1,1 +1,1 @@
-ls -tu -p | awk '{printf "%s, ", $0}'
+ls -1tu -p | paste -sd ', ' -
