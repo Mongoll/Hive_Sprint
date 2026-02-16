@@ -1,0 +1,1 @@
+grep -w -c not hay.txt
