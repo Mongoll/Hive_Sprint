@@ -1,1 +1,1 @@
-ls -1tu -p | paste -sd ', ' -
+ls -1utp | sed ':a;N;$!ba;s/\n/, /g'
