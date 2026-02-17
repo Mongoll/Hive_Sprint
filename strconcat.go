@@ -1,6 +1,6 @@
 package sprint
 
-import "string"
+import "strings"
 
 func StrConcat(s1, s2, delim string) string {
 	var builder strings.Builder
