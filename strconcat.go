@@ -1,11 +1,6 @@
 package sprint
 
-import "strings"
-
 func StrConcat(s1, s2, delim string) string {
-	var builder strings.Builder
-	builder.WriteString(s1)
-	builder.WriteString(delim)
-	builder.WriteString(s2)
-	return builder.String()
+	
+	return s1+delim+s2
 }
