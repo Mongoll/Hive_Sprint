@@ -1,8 +1,8 @@
 package sprint
 
-/* import (
+import (
     "fmt"
-) */
+) 
 
 func IntVsFloat(i int, f float32) string {
     fi := float32(i)
@@ -16,8 +16,8 @@ func IntVsFloat(i int, f float32) string {
     }
 }
 
-/* func main() {
+func main() {
     fmt.Println(IntVsFloat(5, 8.8))   // "Float"
     fmt.Println(IntVsFloat(10, 3.5))  // "Integer"
     fmt.Println(IntVsFloat(7, 7.0))   // "Same"
-} */
+}

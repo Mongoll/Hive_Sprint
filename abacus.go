@@ -12,4 +12,5 @@ func Abacus(a int, b int) int {
 func main() {
 	result := Abacus(10, 2)
 	fmt.Println("Result:", result)
+	// or just one line fmt.Println("Result:", Abacus(10, 2)) 
 } 

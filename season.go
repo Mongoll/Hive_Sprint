@@ -1,12 +1,12 @@
 package main
 
-//import "fmt"
-//import "strings"
+import "fmt"
+import "strings"
 
 // Season returns the season name for a given month abbreviation (lowercase 3 letters)
 func Season(month string) string {
     // Normalize input to lowercase
-    //m := strings.ToLower(month)
+    m := strings.ToLower(month)
 
     switch month {
     case "jan", "feb", "dec":
@@ -21,10 +21,10 @@ func Season(month string) string {
         return "invalid input: " + month
     }
 }
-/* 
+
 func main() {
     fmt.Println(Season("feb"))        // winter
     fmt.Println(Season("September"))  // invalid input: September
     fmt.Println(Season("Jul"))        // summer
     fmt.Println(Season("abc"))        // invalid input: abc
-} */
+} 
