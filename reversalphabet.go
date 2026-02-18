@@ -11,9 +11,10 @@ func ReverseAlphabet(step int) string {
 	}									
 													//Create an empty list (array) for processing/fetching letters
 	var result []rune								//We use "var" because we use "result" outside the loop.
-													
+	//result := []rune{} - at that case the same as var
+	
 	for ch := 'z'; ch >= 'a'; ch -= rune(step) {  	//For "ch", we don’t use "var" because "ch" exists only inside the loop.
-		result = append(result, ch)					// ch -= rune(step) hte same as ch = ch - rune(step)
+		result = append(result, ch)					// ch -= rune(step) the same as ch = ch - rune(step)
 	}												// The append built-in function appends elements to the end of a slice. in that case: "result" - slise, "ch" - element
 
 	return string(result)							//Convert an array of Unicode numbers to string letters
