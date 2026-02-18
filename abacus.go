@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func Abacus(a int, b int) int {
 	if  b == 0 {
@@ -9,7 +9,7 @@ func Abacus(a int, b int) int {
 	return a / b
 }
 
-func main() {
+/* func main() {
 	result := Abacus(10, 2)
 	fmt.Println("Result:", result)
-}
+} */
