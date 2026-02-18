@@ -1,4 +1,4 @@
-package sprint
+package main
 
 // import "fmt"
 
@@ -6,10 +6,10 @@ package sprint
 func IsNegative(n int) bool {
     return n < 0
 }
-/* 
-func main() {
+
+/* func main() {
     // Examples
     fmt.Println(IsNegative(6))  // Output: false
     fmt.Println(IsNegative(-5)) // Output: true
     fmt.Println(IsNegative(0))  // Output: false
-} */
+}  */
