@@ -1,9 +1,7 @@
 package main
 
-import (
-    "fmt"
-    "strings"
-) 
+//import "fmt"
+import "strings"
 
 // Season returns the season name for a given month abbreviation (lowercase 3 letters)
 func Season(month string) string {
