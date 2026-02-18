@@ -8,7 +8,7 @@ func Season(month string) string {
     // Normalize input to lowercase
     //m := strings.ToLower(month)
 
-    switch m {
+    switch momth {
     case "jan", "feb", "dec":
         return "winter"
     case "mar", "apr", "may":
