@@ -1,34 +1,24 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 )
 
-// It returns an error if the input is outside the valid range [1, 26].
-func GetLetterFromNumber(n int) (rune, error) {
-	if n < 1 || n > 26 {
-		return 0, errors.New("input must be a positive integer between 1 and 26")
+func GetLetterFromNumber(n int) string {
+	
+	if n < 1 || n > 26 {			// <- It returns an error if the input is outside the valid range.
+		panic("input must be a positive integer between 1 and 26")
+	} 								
+
+	result := make([]rune, n) 		// <-create array with 'n' elements. Example: result = [0, 0, 0, ..., 0]
+
+	for i := 0; i < n; i++ {		// <- The Unicode code point for 'a' is 97. rune(i) converts i to the same type.
+		result[i] = 'a' + rune(i) 	// <- When we add them together: i = 0 → 'a' + 0 = 'a'; i = 1 → 'a' + 1 = 'b'...
 	}
 
-	// 'a' has an ASCII value of 97.
-	// To get the corresponding letter, we add (n - 1) to the ASCII value of 'a'.
-	// For example, if n = 1, we get 'a' + 0. If n = 2, we get 'a' + 1 ('b').
-	letter := rune('a' + n - 1)
-
-	return letter, nil
+	return string(result)			// <- return array of numbers Unicode and convert them to a string
 }
 
 func main() {
-	// Example usage
-	inputs := []int{1, 5, 26, 0, 27}
-
-	for _, input := range inputs {
-		letter, err := GetLetterFromNumber(input)
-		if err != nil {
-			fmt.Printf("Input %d: %v\n", input, err)
-		} else {
-			fmt.Printf("Input %d: %c\n", input, letter)
-		}
-	}
+	fmt.Println(GetLetterFromNumber(6))
 }
