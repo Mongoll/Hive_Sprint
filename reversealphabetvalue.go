@@ -1,4 +1,4 @@
-package sprint
+package main
 
 //import "fmt"
 
