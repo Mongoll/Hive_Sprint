@@ -12,7 +12,7 @@ func CountDivisible(from, to, step, divisor int) int {
     }
 
     count := 0
-    for i := from; i < to; i += step {
+    for i := from; i <= to; i += step {
         if i%divisor == 0 {
             count++
         }

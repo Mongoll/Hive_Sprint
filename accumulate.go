@@ -1,8 +1,7 @@
 package sprint
 
-/* import (
-    "fmt"
-) */
+//import "fmt"
+
 
 // Accumulate returns the sum of all integers from 0 to n (inclusive) if n is positive.
 // Returns 0 if n is negative.
