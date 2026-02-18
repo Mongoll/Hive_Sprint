@@ -1,8 +1,8 @@
-package sprint
+package main
 
-/* import (
+import (
     "fmt"
-) */
+) 
 
 // BetweenLimits returns a string containing all runes between 'from' and 'to' (exclusive)
 func BetweenLimits(from, to rune) string {
@@ -17,10 +17,10 @@ func BetweenLimits(from, to rune) string {
     }
     return result
 }
-/* 
+
 func main() {
     fmt.Println(BetweenLimits('j', 'f')) // "ghi"
     fmt.Println(BetweenLimits('f', 'j')) // "ghi"
     fmt.Println(BetweenLimits('a', 'd')) // "bc"
     fmt.Println(BetweenLimits('z', 'x')) // "y"
-} */
+} 
