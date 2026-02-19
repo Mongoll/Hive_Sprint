@@ -26,7 +26,7 @@ func StrToInt(s string) int {
 		num = num*10 + int(digit)  // shift previous digits left and add new
 	}
 
-	return num
+	return sign * num
 }
 
 /* func main() {
