@@ -1,8 +1,8 @@
 package sprint
 
-import (
+/* import (
 	"fmt"
-)
+) */
 
 func Countdown(n int) string {
 	if n < 0 || n > 9 {
@@ -15,7 +15,8 @@ func Countdown(n int) string {
 		if result != "" {
 			result += ", "						//if "result" contain data → add ", " at the end
 		}
-		result += fmt.Sprintf("%d", i)			//"Sprintf" format and returns numbers as a string | "%d" - placeholder for decimal integer
+		result += string ('0' + i)
+		//result += fmt.Sprintf("%d", i)			//"Sprintf" format and returns numbers as a string | "%d" - placeholder for decimal integer
 	}
 
 	// add zero at the end of line
