@@ -1,8 +1,9 @@
-package sprint
+//for test in sandbox and code review I chenged package to "main" and add "funk main{}"
+package main
 
-/* import (
+import (
 	"fmt"
-) */
+) 
 
 func ReverseAlphabet(step int) string {
 
@@ -20,6 +21,6 @@ func ReverseAlphabet(step int) string {
 	return string(result)							//Convert an array of Unicode numbers to string letters
 }
 
-/* func main() {
+func main() {
 	fmt.Println(ReverseAlphabet(5))
-} */
+}
