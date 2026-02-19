@@ -1,8 +1,8 @@
-package sprint
+package main
 
-/* import (
+import (
 	"fmt"
-) */
+) 
 
 func AlphaNumber(n int) string {
 
@@ -35,6 +35,6 @@ func AlphaNumber(n int) string {
 	return string(digits)
 }
 
-/* func main(){
+func main(){
 	fmt.Println(AlphaNumber(234))
-} */
+}

@@ -1,8 +1,8 @@
-package sprint
+package main
 
-/* import (
+ import (
 	"fmt"
-)  */
+) 
 
 func StrToInt(s string) int {
 	
@@ -37,6 +37,6 @@ func StrToInt(s string) int {
 	return sign * num
 }
 
-/* func main() {
+ func main() {
 	fmt.Println(StrToInt("10203"))
-}  */
+}  
