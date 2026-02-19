@@ -7,7 +7,7 @@ package sprint
 func AlphabetMastery(n int) string {
 	
 	if n < 1 || n > 26 {			// <- It returns an error if the input is outside the valid range.
-		return "input must be a positive integer between 1 and 26"
+		return ""
 	} 								
 
 	result := make([]rune, n) 		// <-create array with 'n' elements. Example: result = [0, 0, 0, ..., 0]
