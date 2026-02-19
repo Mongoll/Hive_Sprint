@@ -1,8 +1,9 @@
-package sprint
+//for test in sandbox and code review I chenged package to "main" and add "funk main{}"
+package main
 
-/* import (
+import (
 	"fmt"
-) */
+) 
 
 func Countdown(n int) string {
 	if n < 0 || n > 9 {
@@ -15,8 +16,8 @@ func Countdown(n int) string {
 		if result != "" {
 			result += ", "						//if "result" contain data → add ", " at the end
 		}
-		result += string(rune('0' + i))
-		//result += fmt.Sprintf("%d", i)			//"Sprintf" format and returns numbers as a string | "%d" - placeholder for decimal integer
+		result += string(rune('0' + i))			//we can't use "fmt" that why we need use "string" an "rune"
+		//result += fmt.Sprintf("%d", i)		//"Sprintf" format and returns numbers as a string | "%d" - placeholder for decimal integer
 	}
 
 	// add zero at the end of line
@@ -28,9 +29,9 @@ func Countdown(n int) string {
 
 	return result
 }
-/* 
+
 func main() {
 	fmt.Println(Countdown(8)) // Output: 8, 6, 4, 2, 0!
 	fmt.Println(Countdown(5)) // Output: 5, 3, 1, 0!
 	fmt.Println(Countdown(0)) // Output: 0!
-} */
+}
