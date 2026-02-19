@@ -1,13 +1,14 @@
-package sprint
+//for test in sandbox and code review I chenged package to "main" and add "funk main{}"
+package main
 
-/* import (
+import (
 	"fmt"
-) */
+) 
 
 func AlphabetMastery(n int) string {
 	
 	if n < 1 || n > 26 {			// <- It returns an error if the input is outside the valid range.
-		return ""
+		return ""					// <- empty line - cose autotests not pass if i have some text in this line
 	} 								
 
 	result := make([]rune, n) 		// <-create array with 'n' elements. Example: result = [0, 0, 0, ..., 0]
@@ -19,6 +20,6 @@ func AlphabetMastery(n int) string {
 	return string(result)			// <- return array of numbers Unicode and convert them to a string
 }
 
-/* func main() {
+func main() {
 	fmt.Println(AlphabetMastery(6))
-} */
+} 
