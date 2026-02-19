@@ -18,7 +18,7 @@ func StrToInt(s string) int {
 		start = 1
 	}
 
-	for i := 0; i < len(s); i++ {	//loop acording string length
+	for i := start; i < len(s); i++ {	//loop acording string length
 		if s[i] < '0' || s[i] > '9' { // check If the string is not a valid number
 			return 0
 		}	
