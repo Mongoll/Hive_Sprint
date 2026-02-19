@@ -1,10 +1,10 @@
-package main
+package sprint
 
-import (
+/* import (
 	"fmt"
-)
+) */
 
-func GetLetterFromNumber(n int) string {
+func AlphabetMastery(n int) string {
 	
 	if n < 1 || n > 26 {			// <- It returns an error if the input is outside the valid range.
 		panic("input must be a positive integer between 1 and 26")
@@ -19,6 +19,6 @@ func GetLetterFromNumber(n int) string {
 	return string(result)			// <- return array of numbers Unicode and convert them to a string
 }
 
-func main() {
-	fmt.Println(GetLetterFromNumber(6))
-}
+/* func main() {
+	fmt.Println(AlphabetMastery(6))
+} */
