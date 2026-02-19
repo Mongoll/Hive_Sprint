@@ -1,8 +1,8 @@
-package main
+package sprint
 
-import (
+/* import (
 	"fmt"
-)
+) */
 
 func ReverseAlphabet(step int) string {
 
@@ -19,6 +19,7 @@ func ReverseAlphabet(step int) string {
 
 	return string(result)							//Convert an array of Unicode numbers to string letters
 }
-func main() {
-	fmt.Println(ReverseAlphabet(27))
-}
+
+/* func main() {
+	fmt.Println(ReverseAlphabet(5))
+} */
