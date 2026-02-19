@@ -11,3 +11,8 @@ func ShiftBy(r rune, step int) rune {
 func main(){
 	fmt.Println(string(ShiftBy('a', 4)))
 }
+
+		// or more easer
+/* func ShiftBy(r rune, step int) rune {
+	return rune((step%26) + 'a')
+} */
