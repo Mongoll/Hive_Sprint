@@ -1,8 +1,8 @@
 package sprint
 
-/* import (
+import (
 	"fmt"
-) */
+)
 
 func Countdown(n int) string {
 	if n < 0 || n > 9 {
