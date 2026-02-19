@@ -2,9 +2,13 @@ package sprint
 
 /* import (
 	"fmt"
-) */
+)  */
 
 func StrToInt(s string) int {
+	
+	if len(s) == 0 { // check first
+		return 0
+	}
 	num := 0
 
 	sign := 1
@@ -16,6 +20,10 @@ func StrToInt(s string) int {
 		start = 1
 	} else if s[0] == '+' {
 		start = 1
+	}
+
+	if start >= len(s) { // handle string like "+" or "-" only
+		return 0
 	}
 
 	for i := start; i < len(s); i++ {	//loop acording string length
@@ -31,4 +39,4 @@ func StrToInt(s string) int {
 
 /* func main() {
 	fmt.Println(StrToInt("10203"))
-} */
+}  */
