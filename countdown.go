@@ -1,8 +1,8 @@
-package main
+package sprint
 
-import (
+/* import (
 	"fmt"
-)
+) */
 
 func Countdown(n int) string {
 	if n < 0 || n > 9 {
@@ -27,9 +27,9 @@ func Countdown(n int) string {
 
 	return result
 }
-
+/* 
 func main() {
 	fmt.Println(Countdown(8)) // Output: 8, 6, 4, 2, 0!
 	fmt.Println(Countdown(5)) // Output: 5, 3, 1, 0!
 	fmt.Println(Countdown(0)) // Output: 0!
-}
+} */
