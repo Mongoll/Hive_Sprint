@@ -1,8 +1,8 @@
-package main
+package sprint
 
-import (
+/* import (
 	"fmt"
-)
+) */
 
 func Combinations() string {
 	var result string										//We use "var" because we use "result" outside the loop.
@@ -23,7 +23,7 @@ func Combinations() string {
 
 	return result
 }
-
+/* 
 func main() {
 	fmt.Println(Combinations())
-}
+} */
