@@ -1,4 +1,4 @@
-package main
+package sprint
 
 import (
 	"fmt"
@@ -20,7 +20,7 @@ func Pairs() string {
 
 	return result
 }
-
+/* 
 func main() {
 	fmt.Println(Pairs())
-}
+} */
