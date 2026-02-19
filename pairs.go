@@ -1,4 +1,5 @@
-package sprint
+//for test in sandbox and code review I chenged package to "main" and add "funk main{}"
+package main
 
 import (
 	"fmt"
@@ -20,7 +21,7 @@ func Pairs() string {
 
 	return result
 }
-/* 
+
 func main() {
 	fmt.Println(Pairs())
-} */
+}
