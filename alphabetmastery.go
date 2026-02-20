@@ -12,9 +12,13 @@ func AlphabetMastery(n int) string {
 	} 								
 
 	result := make([]rune, n) 		// <-create array with 'n' elements. Example: result = [0, 0, 0, ..., 0]
+	//also we can use
+	//result := []rune{}
 
 	for i := 0; i < n; i++ {		// <- The Unicode code point for 'a' is 97. rune(i) converts i to the same type.
 		result[i] = 'a' + rune(i) 	// <- When we add them together: i = 0 → 'a' + 0 = 'a'; i = 1 → 'a' + 1 = 'b'...
+	//also we can use 
+	//result = append(result, 'a'+rune(i))
 	}
 
 	return string(result)			// <- return array of numbers Unicode and convert them to a string
@@ -23,3 +27,22 @@ func AlphabetMastery(n int) string {
 func main() {
 	fmt.Println(AlphabetMastery(6))
 } 
+
+
+//refactoring without using array
+/* 
+ func AlphabetMastery(n int) string {
+
+	result := ""
+
+	if n < 1 || n > 26 { 
+		return ""
+	}
+
+	for i := 0; i < n; i++ { 
+		result += string('a' + rune(i)) 
+	}
+
+	return result
+} 
+ */

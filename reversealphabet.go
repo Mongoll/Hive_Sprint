@@ -24,3 +24,22 @@ func ReverseAlphabet(step int) string {
 func main() {
 	fmt.Println(ReverseAlphabet(5))
 }
+
+//refactoring: without using array
+/* 
+func ReverseAlphabet(step int) string {
+
+	result := ""
+	
+	if step <= 0 { 
+		step = 1
+	}
+
+	for ch := 'z'; ch >= 'a'; ch -= rune(step) { 
+		result += string(ch) 
+	} 
+
+	return result
+}
+
+ */
