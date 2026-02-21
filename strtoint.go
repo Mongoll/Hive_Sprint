@@ -9,8 +9,8 @@ func StrToInt(s string) int {
 	if len(s) == 0 { // check first
 		return 0
 	}
+	
 	num := 0
-
 	sign := 1
 	start := 0
 
