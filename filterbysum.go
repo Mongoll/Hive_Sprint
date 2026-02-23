@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func FilterBySum(arr [][]int, limit int) [][]int {
 	var result [][]int
@@ -16,6 +16,6 @@ func FilterBySum(arr [][]int, limit int) [][]int {
 	return result
 }
 
-func main() {
+/* func main() {
 	fmt.Println(FilterBySum([][]int{{1, 2, 3}, {2, 3, 4}, {3, 4, 5}}, 9))
-}
+} */
