@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func BalanceOut(arr []bool) []bool {
 	trueCount := 0
@@ -23,6 +23,6 @@ func BalanceOut(arr []bool) []bool {
 	return arr
 }
 
-func main(){
+/* func main(){
 	fmt.Println(BalanceOut([]bool{true, false, false, false}))
-}
+} */
