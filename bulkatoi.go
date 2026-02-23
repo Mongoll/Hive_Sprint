@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func StrToInt(s string) int {
 	
@@ -43,6 +43,6 @@ func BulkAtoi(arr []string) []int {
 	return result
 }
 
-func main() {
+/* func main() {
 	fmt.Println(BulkAtoi([]string{"8", "kood", "-13"}))
-}
+} */
