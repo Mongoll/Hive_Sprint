@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func RemoveElementsInRange(arr []float64, from, to int) []float64 {
 if from > to {
@@ -18,6 +18,6 @@ if from >= len(arr) || from >= to {
 	return append(arr[:from], arr[to:]...)
 }
 
-func main() {
+/* func main() {
 	fmt.Println(RemoveElementsInRange([]float64{10., .8, -.4, 20., 7.7, 3.}, 4, 1))
-}
+} */
