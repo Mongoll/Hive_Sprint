@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func SortIntegerTable(table []int) []int {
 	n := len(table)
@@ -14,6 +14,6 @@ func SortIntegerTable(table []int) []int {
 	return table
 }
 
-func main() {
+/* func main() {
 	fmt.Println(SortIntegerTable([]int{2, 0, 5, 4, 1, 3}))
-}
+} */
