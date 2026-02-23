@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func GenerateRange(min, max int) []int {
 	nums := make([]int, 0)
@@ -12,7 +12,7 @@ func GenerateRange(min, max int) []int {
 	return nums
 }
 
-func main() {
+/* func main() {
 	fmt.Println(GenerateRange(-1, 4))
 
-}
+} */
