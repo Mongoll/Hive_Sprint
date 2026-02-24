@@ -1,13 +1,15 @@
 package main
 
 func StrSplitBy(s, sep string) []string {
+
+	if s == "" && sep == "" {
+		return nil
+	}
+
 	var strarr []string
 
 	if len(sep) == 0 {
-		if len(s) == 0 {
-			return nil
-		}
-		return nil
+		return []string{s}
 	}
 
 	tempstr := ""
