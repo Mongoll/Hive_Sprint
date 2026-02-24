@@ -6,24 +6,29 @@ func StrSplitBy(s, sep string) []string {
 		return nil
 	}
 
-	var strarr []string
+	var result []string
 
 	if len(sep) == 0 {
 		return []string{s}
 	}
 
-	tempstr := ""
+	current := ""
 	i := 0
+
 	for i < len(s) {
+
 		if i+len(sep) <= len(s) && s[i:i+len(sep)] == sep {
-			strarr = append(strarr, tempstr)
-			tempstr = ""
+			result = append(result, current)
+			current = ""
 			i += len(sep)
 			continue
 		}
-		tempstr += string(s[i])
+
+		current += string(s[i])
 		i++
 	}
-	strarr = append(strarr, tempstr)
-	return strarr
+
+	result = append(result, current)
+
+	return result
 }
