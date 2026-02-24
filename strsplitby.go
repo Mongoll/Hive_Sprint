@@ -5,9 +5,9 @@ func StrSplitBy(s, sep string) []string {
 
 	if len(sep) == 0 {
 		if len(s) == 0 {
-			return []string{}
+			return nil
 		}
-		return []string{}
+		return nil
 	}
 
 	tempstr := ""
