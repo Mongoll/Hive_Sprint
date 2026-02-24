@@ -3,8 +3,8 @@ package main
 func StrSplitBy(s, sep string) []string {
 	var strarr []string
 
-	if len(sep) == 0 {
-		return []string{s}
+	if s == "" && sep == "" {
+		return []string{}
 	}
 
 	tempstr := ""
