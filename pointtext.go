@@ -12,6 +12,6 @@ func PointText(p Point) Point {
 	return p
 }
 
-func main() {
+/* func main() {
 	fmt.Println(PointText(Point{3, 5, "text"}))
-}
+} */
