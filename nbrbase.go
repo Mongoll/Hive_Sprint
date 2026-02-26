@@ -4,7 +4,7 @@ package main
 
 func NbrBase(n int, base string) string {
 
-	if len(base) < 2 || len(base) >2 && len(base) < 6 || len(base) == 7{
+	if len(base) < 2 || len(base) >2 && len(base) < 6 {
 		return "NV"
 	}
 		
