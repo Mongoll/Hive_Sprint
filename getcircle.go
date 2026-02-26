@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+/* import "fmt" */
 
 type Circle struct {
 	Radius    float32
@@ -16,6 +16,7 @@ func GetCircle(r float32) Circle {
 	perimeter := 2 * pi * r
 	return Circle{Radius: r, Diameter: dia, Area: area, Perimeter: perimeter}
 }
-func main() {
+/* func main() {
 	fmt.Println(GetCircle(5))
 }
+ */
