@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+/* import "fmt" */
 
 type Point struct {
 	X    float32
@@ -19,6 +19,6 @@ func PointDiff(p1, p2 Point) Point {
 	return p2
 }
 
-func main() {
+/* func main() {
 	fmt.Println(PointDiff(Point{3, 4, "text"}, Point{3, 5, "text"}))
-}
+} */
