@@ -3,12 +3,16 @@ package main
 import "fmt"
 
 func ToThePowerIterative(n int, power int) int {
-	if power == 0 {
-		return 1
-	} else if power > 0 {
-		return n * ToThePowerIterative(n, power-1)
+	
+	f := 1
+	if power > 0 {
+		for i := 1; i <= power; i++ {
+			f *= n
+		}
+	} else {
+		f = 0
 	}
-	return 0
+	return f
 
 }
 func main() {
