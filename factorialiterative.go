@@ -3,10 +3,14 @@ package main
 import "fmt"
 
 func FactorialIterative(n int) int {
-	if n == 0 || n == 1 {
-		return 1
+	var f int
+	f = 1
+	if n>0{
+		for i := 1; i <= n; i++ {
+			f *= i
+		}
 	}
-	return n * FactorialIterative(n-1)
+	return f
 }
 
 func main() {
