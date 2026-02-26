@@ -9,6 +9,7 @@ func NbrBase(n int, base string) string {
 	}
 	if len(base) == 3 {
 		return "NV"
+	}
 		
 	if len(base) == 0 {
 		return string(base[0])
