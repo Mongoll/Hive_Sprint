@@ -10,7 +10,7 @@ func ToThePowerIterative(n int, power int) int {
 			f *= n
 		}
 	} else {
-		f = 0
+		f = 1
 	}
 	return f
 
