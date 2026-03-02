@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+/* import "fmt" */
 
 func FactorialIterative(n int) int {
 	var f int
@@ -13,6 +13,6 @@ func FactorialIterative(n int) int {
 	return f
 }
 
-func main() {
+/* func main() {
 	fmt.Println(FactorialIterative(5))
-}
+} */

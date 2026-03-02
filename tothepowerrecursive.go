@@ -1,6 +1,6 @@
 package main
-
-import "fmt"
+/* 
+import "fmt" */
 
 func ToThePowerIterative(n int, power int) int {
 	if power == 0 {
@@ -11,6 +11,6 @@ func ToThePowerIterative(n int, power int) int {
 	return 0
 
 }
-func main() {
+/* func main() {
 	fmt.Println(ToThePowerIterative(2, 10))
-}
+} */
